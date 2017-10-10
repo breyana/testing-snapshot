@@ -16,9 +16,12 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.17.1",
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
     "ejs": "^2.5.6",
     "express": "^4.15.2",
     "method-override": "^2.3.10",
+    "mocha": "^4.0.1",
     "pg-promise": "^6.2.1"
   },
   "devDependencies": {
