@@ -9,6 +9,9 @@
     "db:reset": "dropdb contacts_development && createdb contacts_development && npm run load_schema",
     "load_schema": "psql -d contacts_development < src/models/db/schema/schema.sql",
     "load_contacts": "psql -d contacts_development < test/seed/contacts.sql",
+    "test:db:reset": "dropdb contacts_test && createdb contacts_test && npm run test:load_schema",
+    "test:load_schema": "psql -d contacts_test < src/models/db/schema/schema.sql",
+    "test:load_contacts": "psql -d contacts_test < test/seed/contacts.sql",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
