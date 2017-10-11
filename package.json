@@ -12,7 +12,7 @@
     "test:db:reset": "dropdb contacts_test && createdb contacts_test && npm run test:load_schema",
     "test:load_schema": "psql -d contacts_test < src/models/db/schema/schema.sql",
     "test:load_contacts": "psql -d contacts_test < test/seed/contacts.sql",
-    "test": "mocha test --recursive"
+    "test": "mocha test --recursive --exit"
   },
   "keywords": [],
   "author": "",
