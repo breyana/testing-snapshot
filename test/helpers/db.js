@@ -6,11 +6,12 @@ const truncateContacts = () => {
 }
 
 const seedContacts = () => {
-  return db.query(`INSERT INTO contacts VALUES
+  return db.query(`INSERT INTO contacts(first_name, last_name) VALUES
     ('Jared', 'Grippe'), ('Tanner', 'Welsh'), ('NeEddra', 'James')`)
 }
 
 module.exports = {
   db,
-  truncateContacts
+  truncateContacts,
+  seedContacts
 }
